@@ -36,7 +36,7 @@ export default function EmailNormalizer() {
         formData.append("files", file);
       });
 
-      const res = await fetch("http://localhost:3001/normalize", {
+      const res = await fetch("https://api.mabasian.dev/normalize", {
         method: "POST",
         body: formData,
       });
